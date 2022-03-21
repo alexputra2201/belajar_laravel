@@ -27,6 +27,14 @@ Route::get('/', function () {
     ]);
 });
 
+Route::get('/test', function () {
+    return view('test', [
+        "title" => "Home",
+        "active" => "home"
+    ]);
+});
+
+
 Route::get('/about', function () {
     return view('about', [
         "title" => "About",
